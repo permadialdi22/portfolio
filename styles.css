@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    transition: background-color 0.5s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 150px;
+}
+
+#home {
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+    background-image:url('backgrond/bg putih.jpeg');
+    background-size: cover;  /* This ensures the image covers the entire background */
+    background-repeat: no-repeat;  /* This prevents the image from repeating */
+    background-position: center;  /* This centers the image */
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);  /* Change text color to make it readable against the background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: x-large;
+}
+
+#aboutme {
+    background-color: #e2e2e2;
+    transition: background-color 0.3s;
+}
+
+#portfolio {
+    background-color: #d0d0d0;
+    margin: 90;
+    padding: 90;
+    transition: background-color 0.5s;
+}
+
+#contact {
+    background-color: #bebebe;
+    transition: background-color 0.5s;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+header.dark-mode {
+    background-color: #1f1f1f;
+}
+
+nav ul li a.dark-mode {
+    color: #bbb;
+}
+
+#home.dark-mode {
+    background-image:url('backgrond/bg hitam.jpeg');
+    background-size: cover;  /* This ensures the image covers the entire background */
+    background-repeat: no-repeat;  /* This prevents the image from repeating */
+    background-position: center;  /* This centers the image */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);  /* Change text color to make it readable against the background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#aboutme.dark-mode {
+    background-color: #2a2a2a;
+}
+
+#portfolio.dark-mode {
+    background-color: #333;
+}
+
+#contact.dark-mode {
+    background-color: #3d3d3d;
+}
+
+.portfolio-item img {
+    display: none;
+    max-width: 200%;
+    margin-top: 8 px;
+}
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.slider-dots .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.slider-dots .dot.active {
+    background-color: #717171;
+}
